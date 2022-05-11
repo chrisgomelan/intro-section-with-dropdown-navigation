@@ -1,0 +1,419 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Epilogue', sans-serif;
+    a{
+        text-decoration: none;
+        color:  hsl(0, 0%, 41%);;
+    }
+    a:hover{
+        opacity: 0.5;
+    }
+    button{
+        cursor: pointer;
+    }
+}
+body {
+    max-width: 100%;
+    min-width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+.nav{   
+   
+    padding: 1rem;
+    
+   .burger {
+       button{
+        border: none;
+        background: none;
+        
+        :hover{
+            opacity: 0.5;
+        }
+    }
+    .close{
+        display: none;
+   
+    }
+   
+   
+ }
+ 
+    .burger.active {
+        img.open.active{
+            display: none;
+        }
+        img.close.active{
+            position: relative;
+            display: block;
+            z-index: 100;
+        }
+    }
+    
+}
+.nav-trans{
+    display: none;
+}
+    .nav-trans.active{
+        background:rgba(1,1,1,0.5);
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 200%;
+        display: block;
+    }
+    .nav-content{
+        display: none;
+    }
+    .nav-content.active{
+        
+        top: 0;
+        position: absolute;
+        z-index: 2;
+        background:white;
+        max-width: 100%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        right: -0.1px;
+        padding: 20px;
+        height: 200%;
+        padding-top: 4rem;
+        font-family: 'Epilogue', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: hsl(0, 0%, 41%);
+        display: block;
+        .features, .company {
+         display: flex;
+         margin-bottom: 1.5rem;
+         .arrow3{
+            display: none;
+        }
+         button{
+            position: relative;
+            background: none;
+            border: none;
+            left: 10px;
+            bottom: 2px;
+         }
+        }
+        .features-content div{
+            display: flex;
+            margin-bottom: 1rem;
+            
+            h6 {
+              margin-left: 1rem;
+             position: relative;
+             top: 2px;
+            }
+        }
+        .company-content h6 {
+          
+             position: relative;
+             top: 2px;
+             margin-bottom: 1rem;
+        }
+        .features-content, .company-content{
+            position: relative;
+            left: 1rem;
+            padding: 0.5rem 0rem;
+            
+        }
+        .others h6 {
+            position: relative;
+            top: 2px;
+             margin-bottom: 1rem;
+        }
+        .company-content{
+            display: none;
+        }
+        .features-content{
+            display: none;
+           
+        }
+        .features-content.active{
+            display: block;
+        
+        }
+        .arrow1.active{
+            display: none;
+        }
+       .arrow3.active{
+           display: block;
+       }
+       .company-content{
+           display: none;
+       }
+       .company-content.active{
+           display: block;
+       }
+    .arrow2.active{
+        display: none;
+    }
+    .arrow4.active{
+        display: block;
+    }
+    .arrow4{
+        display: none;
+    }
+    }
+ .container1{
+    display: flex;
+    justify-content: space-between;
+ }
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+    .hero{
+        position: relative;
+        img{
+            position: relative;
+            width: 100%;
+        
+        }
+    }
+    .side-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        gap: 1rem;
+        padding: 3rem 2rem;
+        text-align: center;
+        
+        h3{
+            font-size: 2rem;
+        }
+        p{
+        
+        color: hsl(0, 0%, 41%);
+           font-size: 0.9rem;
+           font-weight: 500;
+           line-height: 1rem;
+          
+        }
+
+        button{
+            background-color: black;
+            border-radius: 15px;
+            padding: 0.8rem;
+            max-width: 120px;
+            border: none;
+            font-weight: 500;
+            color: hsl(0, 0%, 98%);
+            margin: 0 1.5rem;
+            
+        }
+        button:hover{
+            opacity: 0.9;
+        }
+    }
+    .logos {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        max-width: 20%;
+        img{
+            max-width: 90%;
+            
+        }
+    }
+}
+.container2{
+    display: none;
+}
+
+@media (min-width: 900px) {
+    button{
+        background: none;
+        border: none;
+    }
+   .nav{
+       position: relative;
+       padding: 2rem;
+       color: hsl(0, 0%, 41%);
+       
+   }
+   .burger{
+       display: none;
+   }
+   .burger.active{
+       display: none;
+   }
+   .nav-content{
+       display: flex;
+       position: relative;
+      margin-left: 6rem; 
+      gap: 4rem;
+      top: 0.3rem;
+   }
+   
+   .features-content{
+       display: none;
+
+   }
+     .arrow4.active{
+         display: block;
+         position: relative;
+         top: -0.2rem;
+    left: -0.04rem;
+        }
+     .arrow2.active{
+         display: none;
+
+     }
+   
+   .others{
+       display: flex;
+       gap: 4rem;
+       
+    position: relative;
+    top: 0.3rem;
+
+   }
+  .company-content.active{
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      top: 3rem;
+      background: white;
+      z-index: 2;
+      padding: 1rem;
+      -webkit-box-shadow: 3px -4px 62px -12px rgba(0,0,0,0.75);
+      -moz-box-shadow: 3px -4px 62px -12px rgba(0,0,0,0.75);
+      box-shadow: 3px -4px 62px -12px rgba(0,0,0,0.75);
+      border-radius: 5px;
+      width: 100px;
+      left: 7rem;
+
+      h6{
+          margin-bottom: 1rem;
+      }
+  }
+   .features-content.active{
+    display: block;
+   position: absolute;
+   top: 3rem;
+   padding: 1rem;
+   z-index: 2;
+   background-color: white;
+   -webkit-box-shadow: 3px -4px 62px -12px rgba(0,0,0,0.75);
+   -moz-box-shadow: 3px -4px 62px -12px rgba(0,0,0,0.75);
+   box-shadow: 3px -4px 62px -12px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    width: 160px;
+    left: -5rem;
+
+    .f1{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        flex-direction: row;
+        h6{
+            margin-left: 2rem;
+        }
+    }
+ 
+}
+.f2{
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-end;
+}
+.arrow1.active{
+    display: none;
+}
+.arrow3.active{
+    display: block;
+    position: relative;
+    z-index: 80;
+    top: -0.2rem;
+    left: -0.04rem;
+}
+.arrow1{
+    position: relative;
+    z-index: 2;
+   
+}
+.arrow3,.arrow4,.company-content{
+    display: none;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+ .side-text{
+     display: flex;
+
+    align-items: flex-start;
+    text-align: left;
+    p{
+        width: 89%;
+    }
+    button{
+        position: relative;
+        margin: 0;
+    }
+ } 
+ .logos{
+     position: relative;
+     margin: 0;
+     top: 5rem;
+    left: 10.5rem;
+ }
+}
+.container2{
+    display: block;
+    
+    button{
+        cursor: pointer;
+     text-align: center;
+        
+    }
+    .reg {
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 8px;
+        font-size: 10px;
+        
+         }
+         .Log{
+            margin-right: 1rem;
+            font-size: 10px;
+        }
+        .Log:hover{
+            font-weight: 700;
+            transition: 0.5s;
+        }
+        .reg:hover{
+            background-color: black;
+            transition: 0.5s;
+            color: white;
+        }
+ }
+ .attribution{
+     position: relative;
+     margin-top: 2rem;
+     top: 4rem;
+ }
+}
