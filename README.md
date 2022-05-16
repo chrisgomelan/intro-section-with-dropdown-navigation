@@ -31,8 +31,7 @@ Your task is to build out the project to the designs inside the `/design` folder
 The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
 
 If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
-## LIVE VIEWING
-https://chrisgomelan.github.io/intro-section-with-dropdown-navigation-main/
+
 You will find all the required assets in the `/images` folder. The assets are already optimized.
 
 There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
@@ -92,3 +91,5 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+## LIVE VIEWING
+https://chrisgomelan.github.io/intro-section-with-dropdown-navigation-main/
